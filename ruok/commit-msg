@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# RUOK Hook
+# Requires this commit-msg line and ruok.py to be in .git/hooks
+# Also requires Python installs (see ruok.py)
+
+cat $1 | python .git/hooks/ruok.py &
